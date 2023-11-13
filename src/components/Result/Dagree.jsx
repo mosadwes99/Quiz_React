@@ -53,7 +53,7 @@ export default function Dagree(props) {
 
         <p className="text-2xl p-3">Your Degree: {dagree} / 10 </p>
 
-        <div className="flex text-2xl content-end text-white gap-5 p-2  ">
+        <div className="flex text-2xl lg:flex-row flex-col text-white gap-5 p-2  ">
           <div
             onClick={ShowResultFunc}
             className="p-2 active:scale-95 cursor-pointer px-4 rounded-md bg-[#666a6f] "

@@ -71,7 +71,7 @@ export default function Result(props) {
               <p className={`text-3xl ${dagreeStyle} `}>{dagree} / 10 </p>
             </div>
           ) : (
-            <p className="font-semibold lg:text-3xl text-xl">
+            <p className="font-semibold lg:text-3xl text-xl text-start">
               Awesome Quiz Application.
             </p>
           )}
