@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+  .next-enter {
+    opacity: 0;
+    transform: translateX(10%);
+  }
+  
+  .next-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 500ms, transform 500ms;
+  }
+  
+  .next-exit {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .next-exit-active {
+    opacity: 0;
+    transform: translateX(-10%);
+    transition: opacity 500ms, transform 500ms;
+  }
+  .prev-enter {
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+  
+  .prev-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 500ms, transform 500ms;
+  }
+  
+  .prev-exit {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .prev-exit-active {
+    opacity: 0;
+    transform: translateX(10%);
+    transition: opacity 500ms, transform 500ms;
+  }
+
+    .examContainer-enter {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+  
+    .examContainer-enter-active {
+      opacity: 1;
+      transform: translateX(0);
+      transition: opacity 300ms, transform 300ms;
+    }
+  
+    .examContainer-exit {
+      opacity: 1;
+    }
+  
+    .examContainer-exit-active {
+      opacity: 0;
+      transform: scale(0.9);
+      transition: opacity 300ms, transform 300ms;
+    }
