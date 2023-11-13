@@ -56,7 +56,7 @@ export default function Result(props) {
       in={animateComponent}
       nodeRef={result}
       timeout={300}
-      classNames="examContainer"
+      classNames="resultContainer"
       unmountOnExit
     >
       <div
@@ -71,17 +71,19 @@ export default function Result(props) {
               <p className={`text-3xl ${dagreeStyle} `}>{dagree} / 10 </p>
             </div>
           ) : (
-            <p className="font-semibold text-3xl">Awesome Quiz Application.</p>
+            <p className="font-semibold lg:text-3xl text-xl">
+              Awesome Quiz Application.
+            </p>
           )}
 
-          <div className="text-white flex gap-1 text-xl items-center p-2 bg-[#333a48] rounded-lg">
+          <div className="text-white flex gap-1 text-xl items-center lg:p-2 p-3 bg-[#333a48] rounded-lg">
             <div className={`${dangerStyle()}`}>
               0{min}:{sec < 10 ? "0" + sec : sec}
             </div>
 
-            <img src={clock} alt="clock" className="w-7 ms-2" />
+            <img src={clock} alt="clock" className="w-7 ms-0 lg:ms-2" />
 
-            <div className="text-center">Time Left</div>
+            <div className="text-center  hidden lg:block">Time Left</div>
           </div>
 
           <div className="absolute h-1 w-full bg-[#b2b1b3] left-0 -bottom-5  rounded-xl"></div>
@@ -98,6 +100,7 @@ export default function Result(props) {
                   data={data}
                   animate={animate}
                   setDagreeStyle={setDagreeStyle}
+                  setAnimateComponent={setAnimateComponent}
                 />
               ))}
           </>
@@ -108,6 +111,7 @@ export default function Result(props) {
             startQuiz={startQuiz}
             dagreeStyle={dagreeStyle}
             setDagreeStyle={setDagreeStyle}
+            setAnimateComponent={setAnimateComponent}
           />
         )}
 

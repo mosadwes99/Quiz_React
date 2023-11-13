@@ -1,11 +1,17 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { CSSTransition } from "react-transition-group";
 import correct from "../../imgs/correct-success-tick-svgrepo-com.svg";
 import wrong from "../../imgs/cancel-delete-remove-svgrepo-com.svg";
 
 export default function QuestResult(props) {
-  let { item, count, data, animate } = props;
+  let { item, count, data, animate, setAnimateComponent } = props;
   let formRef = useRef(null);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setAnimateComponent(true);
+    }, 100);
+  }, []);
 
   let checkAnswerStyle = (ans) => {
     if (ans.text === item.userAnswer && ans.text === item.correctAnswer) {
@@ -47,11 +53,7 @@ export default function QuestResult(props) {
           <div className="me-2">{count + 1}.</div>
           <div>
             {item.question}
-            {!item.userAnswer && (
-              <span className="text-red-500 ms-1">
-                *
-              </span>
-            )}
+            {!item.userAnswer && <span className="text-red-500 ms-1">*</span>}
           </div>
         </div>
 

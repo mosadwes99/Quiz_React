@@ -170,8 +170,8 @@ export default function App() {
   let [isStart, setIsStart] = useState(false);
   let [isWait, setIsWait] = useState(true);
   let [isEnd, setIsEnd] = useState(false);
-  let [sec, setSec] = useState(30);
-  let [min, setMin] = useState(0);
+  let [sec, setSec] = useState(0);
+  let [min, setMin] = useState(2);
   let [mile, setMile] = useState(0);
   let [dagree, setDagree] = useState(0);
 
@@ -180,8 +180,9 @@ export default function App() {
       item.userAnswer = "";
     });
     setDagree(0);
+    setSec(0);
     setMile(990)
-    setSec(30);
+    setMin(2);
     setIsEnd(false);
     setIsWait(false);
     setIsStart(true);

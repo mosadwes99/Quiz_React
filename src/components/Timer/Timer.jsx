@@ -36,25 +36,25 @@ export default function Timer(props) {
 
   let barProgress = () => {
     if (count === 0) {
-      return "w-[10%]";
+      return "w-[0%]";
     } else if (count === 1) {
-      return "w-[20%]";
+      return "w-[10%]";
     } else if (count === 2) {
-      return "w-[30%]";
+      return "w-[20%]";
     } else if (count === 3) {
-      return "w-[40%]";
+      return "w-[30%]";
     } else if (count === 4) {
-      return "w-[50%]";
+      return "w-[40%]";
     } else if (count === 5) {
-      return "w-[60%]";
+      return "w-[50%]";
     } else if (count === 6) {
-      return "w-[70%]";
+      return "w-[60%]";
     } else if (count === 7) {
-      return "w-[80%]";
+      return "w-[70%]";
     } else if (count === 8) {
-      return "w-[90%]";
+      return "w-[80%]";
     } else if (count === 9) {
-      return "w-[100%]";
+      return "w-[90%]";
     }
   };
 
