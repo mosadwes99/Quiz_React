@@ -21,7 +21,7 @@ export default function Quset(props) {
         classNames={animate.class}
         unmountOnExit
       >
-        <div className="flex flex-col lg:h-fit h-[55%]" ref={formRef}>
+        <div className="flex flex-col lg:h-fit  h-[55%]" ref={formRef}>
           <div className=" 2xl:text-3xl xl:text-2xl text-xl font-semibold flex  min-h-[5rem]">
             <div className="me-2">{count + 1}.</div>
             <div>{item.question}</div>

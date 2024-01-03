@@ -94,7 +94,7 @@ export default function Questions(props) {
       >
         <div
           ref={exam}
-          className="w-full lg:w-1/2 h-full lg:h-fit  lg:justify-center bg-white rounded-xl p-8 flex flex-col justify-center gap-8 overflow-hidden"
+          className="w-full lg:w-1/2 h-full lg:h-fit lg:justify-center bg-white rounded-xl p-8 flex flex-col justify-center gap-8 overflow-hidden"
         >
           <Timer
             setIsEnd={setIsEnd}

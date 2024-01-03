@@ -61,7 +61,7 @@ export default function Result(props) {
     >
       <div
         ref={result}
-        className="text-center bg-white p-10 flex rounded-lg flex-col justify-center items-center text-black gap-4 w-full lg:w-1/2 h-full lg:h-fit"
+        className="text-center bg-white overflow-hidden p-10 flex rounded-lg flex-col justify-center items-center text-black gap-4 w-full lg:w-1/2 h-full lg:h-fit"
       >
         <div className="flex justify-between w-full relative items-center  ">
           {showResult ? (

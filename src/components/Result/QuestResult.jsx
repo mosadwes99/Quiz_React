@@ -48,7 +48,10 @@ export default function QuestResult(props) {
       classNames={animate.class}
       unmountOnExit
     >
-      <div className="flex w-full flex-col lg:h-fit h-[55%] py-2" ref={formRef}>
+      <div
+        className="flex w-full  flex-col lg:h-fit h-[55%] py-2"
+        ref={formRef}
+      >
         <div className=" 2xl:text-3xl xl:text-2xl text-xl font-semibold flex  text-start min-h-[5rem]">
           <div className="me-2">{count + 1}.</div>
           <div>
